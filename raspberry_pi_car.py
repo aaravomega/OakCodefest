@@ -1,5 +1,3 @@
-#made on raspberry pi
-#we have represented it in the form of a WORKING CAR (4WD) ROBOT
 from gpiozero import MotionSensor
 import RPi.GPIO as gpio
 import time
@@ -53,6 +51,14 @@ def stop(tf):
     time.sleep(tf)
     #gpio.cleanup()
 
-    forward(3)
-    stop(1)
-    
+keys=pygame.key.get_pressed()
+if keys[K_w]:
+    forward(0.5)
+if keys[K_s]
+    reverse(0.5)
+if keys[K_d]:
+    turn_right(0.5)
+if keys[K_a]
+    turn_left(0.5)
+        else:
+            pass
